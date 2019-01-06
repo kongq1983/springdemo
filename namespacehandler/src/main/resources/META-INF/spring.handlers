@@ -1,1 +1,1 @@
-http\://www.kq.com/schema/soa=com.dongnao.jack.spring.parse.SOANamespaceHandler
+http\://www.kq.com/schema/soa=com.kq.springdemo.namespacehandler.parse.SOANamespaceHandler
