@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:myns="http://www.kq.com/schema/my"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.kq.com/schema/my http://www.kq.com/schema/my/my.xsd">
+
+    <!-- as a top-level bean -->
+    <myns:dateformat id="defaultDateFormat" pattern="yyyy-MM-dd HH:mm" lenient="true"/>
+
+    <bean class="com.kq.mynamespace.MyDate">
+        <constructor-arg ref="defaultDateFormat"/>
+    </bean>
+
+
+</beans>

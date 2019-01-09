@@ -5,7 +5,10 @@
 	<groupId>com.kq.springdemo</groupId>
 	<artifactId>springdemo</artifactId>
 	<version>1.0</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>mynamespace</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>springdemo</name>
 	<url>http://maven.apache.org</url>
