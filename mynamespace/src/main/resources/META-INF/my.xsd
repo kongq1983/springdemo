@@ -18,4 +18,17 @@
             </xsd:complexContent>
         </xsd:complexType>
     </xsd:element>
+
+    <xsd:element name="server">
+        <xsd:complexType>
+            <xsd:complexContent>
+            <xsd:extension base="beans:identifiedType">
+                <xsd:attribute name="ip" type="xsd:string" use="required"></xsd:attribute>
+                <xsd:attribute name="port" type="xsd:integer" use="required"></xsd:attribute>
+                <xsd:attribute name="protocol" type="xsd:string" default="http"></xsd:attribute>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
 </xsd:schema>

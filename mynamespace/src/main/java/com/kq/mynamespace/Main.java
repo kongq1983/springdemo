@@ -19,6 +19,9 @@ public class Main {
         MyDate date = ctx.getBean(MyDate.class);
         System.out.println("date="+date);
 
+        Server server = ctx.getBean(Server.class);
+        System.out.println("server="+server);
+
     }
 
 }
